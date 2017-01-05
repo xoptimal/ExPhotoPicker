@@ -17,7 +17,7 @@
 		}
 
 	dependencies {
-		        compile 'com.github.xoptimal:ExPhotoPicker:v1.0'
+		        compile 'com.github.xoptimal:ExPhotoPicker:Latest release'
 		}
 
 <br/>
