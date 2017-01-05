@@ -22,6 +22,8 @@ public class MainActivity extends ToolbarActivity {
     private ImageView iv_icon;
     private TextView  tv_hint;
 
+    public static final int REQUEST_CODE = 10;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,7 +60,7 @@ public class MainActivity extends ToolbarActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (resultCode == RESULT_OK && requestCode == 10) {
+        if (resultCode == RESULT_OK && requestCode == REQUEST_CODE) {
             if (data != null) {
                 ArrayList<String> photos =
                         data.getStringArrayListExtra(PhotoPicker.KEY_SELECTED_PHOTOS);
@@ -78,13 +80,13 @@ public class MainActivity extends ToolbarActivity {
     public void querySingle(View view) {
         new ExPhotoPicker.Builder()
                 .showSingleModel(true)
-                .build().start(this, 10);
+                .build().start(this, REQUEST_CODE);
     }
 
     public void queryMore(View view) {
         new ExPhotoPicker.Builder()
                 .setMaxCount(3)
                 .showPreview(true)
-                .build().start(this, 10);
+                .build().start(this, REQUEST_CODE);
     }
 }

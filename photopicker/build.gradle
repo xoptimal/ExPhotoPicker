@@ -6,11 +6,16 @@ group='com.github.xoptimal'
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.0"
+    resourcePrefix "x_"
 
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 25
     }
+}
+
+ext {
+    supportLibVersion = "25.0.1"
 }
 
 dependencies {

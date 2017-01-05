@@ -77,7 +77,23 @@
 
 <br/>
 
-#### Step 4. ExPhotoPicker支持参数
+#### Step 4. 获取图片
+
+	@Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK && requestCode == REQUEST_CODE) {
+            if (data != null) {
+                ArrayList<String> photos = data.getStringArrayListExtra(PhotoPicker.KEY_SELECTED_PHOTOS);
+				...
+            }
+        }
+    }
+
+
+<br/>
+
+#### Step 5. ExPhotoPicker支持参数
 
 方法名 | 说明
 ----|-----
@@ -90,7 +106,7 @@ showPreview(boolean showPreview)  | 开启列表预览功能
 
 <br/>
 
-#### Step 5. 扩展
+#### Step 6. 扩展
 
 框架主题色, 根据主项目 -> res -> colors -> `<color name="colorPrimary">#3F51B5</color>`
 
