@@ -27,7 +27,7 @@ public class TopNavigationBar extends RelativeLayout {
 
     public TopNavigationBar(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        inflate(context, R.layout.view_navigation_top, this);
+        inflate(context, R.layout.x_view_navigation_top, this);
     }
 
     private SparseArray<View> childViews = new SparseArray<>();

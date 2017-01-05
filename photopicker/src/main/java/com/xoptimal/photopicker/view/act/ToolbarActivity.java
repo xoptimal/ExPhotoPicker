@@ -22,7 +22,7 @@ public class ToolbarActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        super.setContentView(R.layout.act_toolbar);
+        super.setContentView(R.layout.x_act_toolbar);
         ll_root = (LinearLayout) findViewById(R.id.ll_root);
     }
 

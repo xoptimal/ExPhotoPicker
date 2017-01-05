@@ -13,9 +13,9 @@
             android:id="@+id/iv_left"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingRight="5dp"
+            android:layout_marginRight="5dp"
             android:visibility="gone"
-            tools:src="@drawable/icon_return"/>
+            tools:src="@drawable/x_icon_return"/>
 
         <TextView
             android:id="@+id/tv_left"
@@ -60,9 +60,9 @@
             android:id="@+id/iv_right"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="5dp"
+            android:layout_marginLeft="5dp"
             android:visibility="gone"
-            tools:src="@drawable/icon_gray_next"/>
+            tools:src="@drawable/x_icon_gray_next"/>
 
     </LinearLayout>
 

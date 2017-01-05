@@ -84,7 +84,7 @@ public class ExPhotoGridAdapter extends SelectableAdapter<ExPhotoGridAdapter.Pho
 
     @Override
     public PhotoViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        final View            itemView = inflater.inflate(R.layout.item_photo, parent, false);
+        final View            itemView = inflater.inflate(R.layout.x_item_photo, parent, false);
         final PhotoViewHolder holder   = new PhotoViewHolder(itemView);
         if (viewType == ITEM_TYPE_CAMERA) {
             holder.vSelected.setVisibility(View.GONE);

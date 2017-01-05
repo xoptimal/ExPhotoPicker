@@ -32,9 +32,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
-            android:background="@drawable/sel_checkbox_bg"
+            android:background="@drawable/x_sel_checkbox_bg"
             android:clickable="false"
-            android:src="@drawable/icon_checkbox"
+            android:src="@drawable/x_icon_checkbox"
             />
 
     </FrameLayout>

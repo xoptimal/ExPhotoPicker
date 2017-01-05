@@ -26,7 +26,7 @@ public class PhotoPreviewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.act_preview);
+        setContentView(R.layout.x_act_preview);
         showFragment();
     }
 

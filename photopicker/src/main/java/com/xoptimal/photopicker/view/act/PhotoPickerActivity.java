@@ -41,7 +41,7 @@ public class PhotoPickerActivity extends ToolbarActivity implements View.OnClick
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.act_photo);
+        setContentView(R.layout.x_act_photo);
         initView();
         showFragment();
     }
@@ -80,7 +80,7 @@ public class PhotoPickerActivity extends ToolbarActivity implements View.OnClick
         }
 
         mTopNavigationBar = (TopNavigationBar) findViewById(R.id.top_bar);
-        mTopNavigationBar.setImageResource(R.id.iv_left, R.drawable.icon_return)
+        mTopNavigationBar.setImageResource(R.id.iv_left, R.drawable.x_icon_return)
                 .setText(R.id.tv_left, getString(R.string.text_picture))
                 .setText(R.id.tv_center, TextUtils.isEmpty(title) ? getString(R.string.text_picture_all) : title)
                 .setText(R.id.tv_right, getString(R.string.text_cancel))

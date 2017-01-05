@@ -35,7 +35,7 @@ public class PhotoExPreviewActivity extends AppCompatActivity implements View.On
         super.onCreate(savedInstanceState);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.act_preview_ex);
+        setContentView(R.layout.x_act_preview_ex);
         top_bar = (TopNavigationBar) findViewById(R.id.top_bar);
         initEXPreview();
     }
@@ -76,9 +76,9 @@ public class PhotoExPreviewActivity extends AppCompatActivity implements View.On
         getFragmentManager().beginTransaction().add(R.id.fl_container, mExImagePagerFragment).commit();
 
         top_bar.setText(R.id.tv_left, getString(R.string.text_picture))
-                .setImageResource(R.id.iv_right, R.drawable.icon_checkbox)
-                .setBackgroundResource(R.id.iv_right, mExPhotos.get(currentItem).isSelected() ? R.drawable.shape_indicator_selected : R.drawable.shape_indicator_normal)
-                .setImageResource(R.id.iv_left, R.drawable.icon_return)
+                .setImageResource(R.id.iv_right, R.drawable.x_icon_checkbox)
+                .setBackgroundResource(R.id.iv_right, mExPhotos.get(currentItem).isSelected() ? R.drawable.x_shape_indicator_selected : R.drawable.x_shape_indicator_normal)
+                .setImageResource(R.id.iv_left, R.drawable.x_icon_return)
                 .setOnClickListener(R.id.tv_left, this)
                 .setOnClickListener(R.id.iv_left, this)
                 .setOnClickListener(R.id.iv_right, this);
@@ -94,7 +94,7 @@ public class PhotoExPreviewActivity extends AppCompatActivity implements View.On
             public void onPageSelected() {
                 top_bar.setText(R.id.tv_center, String.format("%d/%d", mExImagePagerFragment.getCurrentItem() + 1, mExPhotos.size()));
                 int currentItem = mExImagePagerFragment.getCurrentItem();
-                top_bar.setBackgroundResource(R.id.iv_right, mExPhotos.get(currentItem).isSelected() ? R.drawable.shape_indicator_selected : R.drawable.shape_indicator_normal);
+                top_bar.setBackgroundResource(R.id.iv_right, mExPhotos.get(currentItem).isSelected() ? R.drawable.x_shape_indicator_selected : R.drawable.x_shape_indicator_normal);
             }
 
             @Override
@@ -152,7 +152,7 @@ public class PhotoExPreviewActivity extends AppCompatActivity implements View.On
                 ToastUtils.makeText(PhotoExPreviewActivity.this, getString(R.string.__picker_over_max_count_tips, mMaxCount));
             } else {
                 mExPhotos.get(mExImagePagerFragment.getCurrentItem()).setSelected(!selected);
-                top_bar.setBackgroundResource(R.id.iv_right, !selected ? R.drawable.shape_indicator_selected : R.drawable.shape_indicator_normal);
+                top_bar.setBackgroundResource(R.id.iv_right, !selected ? R.drawable.x_shape_indicator_selected : R.drawable.x_shape_indicator_normal);
                 selCount();
             }
 

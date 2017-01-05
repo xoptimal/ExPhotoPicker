@@ -16,8 +16,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"
-        app:ci_drawable="@drawable/shape_indicator_selected"
-        app:ci_drawable_unselected="@drawable/shape_indicator_normal"
+        app:ci_drawable="@drawable/x_shape_indicator_selected"
+        app:ci_drawable_unselected="@drawable/x_shape_indicator_normal"
         />
 
 </RelativeLayout>

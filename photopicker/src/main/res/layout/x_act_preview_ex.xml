@@ -33,9 +33,9 @@
             android:layout_width="60dp"
             android:layout_height="25dp"
             android:layout_alignParentRight="true"
-            android:background="@drawable/sel_btn_bg"
+            android:background="@drawable/x_sel_btn_bg"
             android:text="@string/btn_done"
-            android:textColor="@drawable/sel_btn_text"/>
+            android:textColor="@drawable/x_sel_btn_text"/>
 
     </RelativeLayout>
 
