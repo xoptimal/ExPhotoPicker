@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+ <color name="colorPrimary">?attr/colorPrimary</color>
+
+    <color name="color_cecece">#cecece</color>
+    <color name="color_f1f1f1">#f1f1f1</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_f4f4f4">#f4f4f4</color>
+    <color name="color_55_f4f4f4">#55f4f4f4</color>
+    <color name="color_55_000000">#88333333</color>
+    <color name="color_55_999999">#55999999</color>
+
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="btn_done">完成</string>
+    <string name="btn_done_count">完成(%d)</string>
+    <string name="text_picture">照片</string>
+    <string name="text_picture_all">所有照片</string>
+    <string name="text_cancel">取消</string>
+
+</resources>

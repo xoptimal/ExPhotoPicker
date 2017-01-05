@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rl_bottom_line"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/iv_dir_cover"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#000"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tv_dir_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="所有照片"
+        android:textColor="@color/color_666666"/>
+
+    <TextView
+        android:id="@+id/tv_dir_count"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_weight="1"
+        android:text="(15)"
+        android:textColor="@color/color_cecece"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/icon_gray_next"/>
+
+
+</LinearLayout>
